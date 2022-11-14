@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Geomanist";
+}
+
+/*==========================Header=======================*/
+.hero{
+    background: radial-gradient(100% 150.97% at 100% 100%, #081F29 0%, #0E2B38 76.7%);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 1.5%;
+}
+.logo img{
+    width: 120px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+}
+.menu li{
+    list-style: none;
+}
+#menu-border{
+    border: 1px solid rgb(157, 157, 157);
+    height: 30px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu button{
+    padding: 10px 25px 10px 25px;
+    color: white;
+    background-color: #26B5C6;
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.active-menu{
+    color: #26B5C6;
+}
+.burger{
+    display: none;
+}
+
+@media only screen and (max-width: 1450px) {
+    .menu{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1217px) {
+    nav{
+        display: block;
+        width: 100%;
+    }
+    #menu-border{
+        display: none;
+    }
+    .menu{
+       display: block;
+       background-color: gray;
+       width: 100%;
+       margin: 0;
+    }
+    .logo, .menu{
+        padding-left: 10%;
+    }
+    .menu li{
+        padding-top: 15px;
+    }
+    .burger{
+        display: block;
+        float: right;
+        margin-top: 5%;
+        color: white;
+        padding-right: 10%;
+    }
+}
