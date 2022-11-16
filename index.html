@@ -4,44 +4,562 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/font/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container flex">
+            <div class="header__logo-box">
+                <img src="images/logo.svg" alt="logo" class="header__logo">
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list flex">
+                    <li class="navigation__list-item"><a href="#" class="navigation__link">Home</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__link">About us</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__link">Our fleet</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__link">Blog</a></li>
+                    <li class="navigation__list-item navigation__list-item--border"><a href="#" class="navigation__link">Contact us</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__link btn btn--rectangular">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
 
-<div class="hero">
-        <nav>
-            <div class="burger">B</div>
-            <div class="logo">
-                <img src="logo.png" alt="">
+
+        <section class="hero container flex">
+            <div class="hero__form-box">
+                <ul class="hero__list flex">
+                    <li class="hero__list-item"><a href="#" class="hero__link btn btn--white">Distance</a></li>
+                    <li class="hero__list-item"><a href="#" class="hero__link btn btn--white btn--inactive btn--inactive--border">Hourly</a></li>
+                    <li class="hero__list-item"><a href="#" class="hero__link btn btn--white btn--inactive">Flat Rate</a></li>
+                </ul>
+
+                <form action="#" class="hero__form">
+                    <div class="hero__form-input-container">
+                        
+                       <div class="radio-container">
+                            <div class="flex radio-flex-box">
+                                <input type="radio" id="one-way" name="path" class="hero__form-input">
+                                <div class="radio-btn"></div>
+                                <label for="one-way" class="hero__form-label">One Way</label>
+                            </div>
+                       </div>
+
+                        <div class="radio-container">
+                            <div class="flex radio-flex-box">
+                                <input type="radio" id="round-trip" name="path" class="hero__form-input">
+                                <div class="radio-btn"></div>
+                                <label for="round-trip" class="hero__form-label">Round Trip</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__form-input-container">
+                        <label for="pickup-address" class="hero__form-label">PICK UP ADDRESS</label>
+                        <input type="text" id="pickup-address" name="pickup-address" placeholder="Enter location.." class="hero__form-input">
+                    </div>
+
+                    <div class="hero__form-input-container">
+                        <label for="drop-address" class="hero__form-label">DROP OFF ADDRESS</label>
+                        <input type="text" id="drop-address" name="address" placeholder="Enter location.." class="hero__form-input">
+                    </div>
+
+                    <div class="hero__form-input-container">
+                        <label for="date" class="hero__form-label">PICK UP DATE</label>
+                        <input type="date" id="date" name="date" class="hero__form-input">
+                    </div>
+
+                    <div class="hero__for-input-container">
+                        <label for="time" class="hero__form-label">TIME</label>
+                        <input type="time" id="time" name="address" class="hero__form-input hero__form-input--no-border">
+                    </div>
+
+                    <button type="submit" class="btn btn--big">Reserve Now</button>
+                </form>
+            </div>
+            <div class="hero__text-box">
+                <h1 class="hero__heading">
+                    <span class="hero__heading--white">Welcome On</span>
+                    <span class="hero__heading--blue"> Board</span>
+                </h1>
+                <p class="hero__text">
+                    Luxury Limousine Sevices In Los Angeles & New York
+                </p>
+                <div class="hero__image-container">
+                    <img src="images/hero-car.png" alt="car" class="hero__image">
+                    <img src="images/hero-shape.svg" alt="shape" class="hero__shape">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="fleet">
+        <div class="fleet__heading-box container">
+            <h2 class="heading-secondary">our fleet</h2>
+            <h3 class="heading-tertiary">Elite cars at your service</h3>
+        </div>
+
+        <div class="flex container u-margin-bottom-medium">
+            <div class="car-info">
+                <div class="car-info__img-container">
+                    <img src="images/car.png" alt="car">
+                </div>
+                <div class="car-info__name-box">
+                    <img src="images/star.svg" alt="star" class="car-info__star">
+                    <h4 class="car-info__carname">Luxury Sedan</h4>
+                </div>
+
+                <h4 class="car-info__heading">Lexus ES 2022</h4>
+
+                                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                    
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+
+                <div class="car-info__reserve">
+                    <span class="car-info__price">From $150</span>
+                    <a href="#" class="btn-link">Reserve now &nbsp;&nbsp;&rarr;</a>
+                </div>
+
             </div>
             
-            <div class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Our fleet</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <div id="menu-border"></div>
-                <button>BOOK NOW</button>
-            </div>
-           
-        </nav>
+            <div class="car-info">
+                <div class="car-info__img-container">
+                    <img src="images/car.png" alt="car">
+                </div>
+                <div class="car-info__name-box">
+                    <img src="images/star.svg" alt="star" class="car-info__star">
+                    <h4 class="car-info__carname">Luxury Sedan</h4>
+                </div>
 
-        <div class="hero-content">
-            <div class="hero-select-box">
-                <div class="hero-selector">
-                    <li>Distance</li>
-                    <li>Hourly</li>
-                    <li>Flat Rate</li>
+                <h4 class="car-info__heading">Lexus ES 2022</h4>
+
+                                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                    
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+
+                <div class="car-info__reserve">
+                    <span class="car-info__price">From $150</span>
+                    <a href="#" class="btn-link">Reserve now &nbsp;&nbsp;&rarr;</a>
+                </div>
+
+            </div>
+
+            <div class="car-info">
+                <div class="car-info__img-container">
+                    <img src="images/car.png" alt="car">
+                </div>
+                <div class="car-info__name-box">
+                    <img src="images/star.svg" alt="star" class="car-info__star">
+                    <h4 class="car-info__carname">Luxury Sedan</h4>
+                </div>
+
+                <h4 class="car-info__heading">Lexus ES 2022</h4>
+
+                                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                    
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+
+                <div class="car-info__reserve">
+                    <span class="car-info__price">From $150</span>
+                    <a href="#" class="btn-link">Reserve now &nbsp;&nbsp;&rarr;</a>
+                </div>
+
+            </div>
+
+            <div class="car-info">
+                <div class="car-info__img-container">
+                    <img src="images/car.png" alt="car">
+                </div>
+                <div class="car-info__name-box">
+                    <img src="images/star.svg" alt="star" class="car-info__star">
+                    <h4 class="car-info__carname">Luxury Sedan</h4>
+                </div>
+
+                <h4 class="car-info__heading">Lexus ES 2022</h4>
+
+                                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                    
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+
+                    <div class="car-info__feature-box">
+                        <img src="images/profile.svg" alt="profile" class="car-info__feature-img">
+                        <span class="car-info__feature-text">7 Passengers</span>
+                    </div>
+                </div>
+
+                <div class="car-info__reserve">
+                    <span class="car-info__price">From $150</span>
+                    <a href="#" class="btn-link">Reserve now &nbsp;&nbsp;&rarr;</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="u-center-text">
+            <a href="#" class="btn btn--round">Show All Vehicles &rarr;</a>
+        </div>
+    </section>
+
+    <section class="choose container">
+        <h2 class="heading-secondary">Why choose us</h2>
+        <h3 class="heading-tertiary">We offer the best experience with our deals</h3>
+        <div class="flex">
+
+            <section class="choose__feature-section">
+                
+            <div class="flex">
+                <div class="choose__feature-box">
+                    <div class="flex choose__feature">
+                        <div class="choose__feature-image-container">
+                            <img src="images/book.svg" alt="booking-icon" class="choose__feature-icon">
+                        </div>
+                       
+                        <div class="choose__feature-text">
+                            <h4 class="choose__feature-heading">Easy Online Booking</h4>
+                            <p class="choose__feature-text">Have a question? Contact Carentall support anytime when you have problem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__feature-box">
+                    <div class="flex choose__feature">
+                        <div class="choose__feature-image-container">
+                            <img src="images/book.svg" alt="booking-icon" class="choose__feature-icon">
+                        </div>
+                       
+                        <div class="choose__feature-text">
+                            <h4 class="choose__feature-heading">Easy Online Booking</h4>
+                            <p class="choose__feature-text">Have a question? Contact Carentall support anytime when you have problem.</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="flex">
+                <div class="choose__feature-box no-margin-bottom">
+                    <div class="flex choose__feature">
+                        <div class="choose__feature-image-container">
+                            <img src="images/book.svg" alt="booking-icon" class="choose__feature-icon">
+                        </div>
+                       
+                        <div class="choose__feature-text">
+                            <h4 class="choose__feature-heading">Easy Online Booking</h4>
+                            <p class="choose__feature-text">Have a question? Contact Carentall support anytime when you have problem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__feature-box no-margin-bottom">
+                    <div class="flex choose__feature">
+                        <div class="choose__feature-image-container">
+                            <img src="images/book.svg" alt="booking-icon" class="choose__feature-icon">
+                        </div>
+                       
+                        <div class="choose__feature-text">
+                            <h4 class="choose__feature-heading">Easy Online Booking</h4>
+                            <p class="choose__feature-text">Have a question? Contact Carentall support anytime when you have problem.</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            </section>
+
+            <div class="choose__img-container">
+                <img src="images/choose.jpg" alt="image" class="choose__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="rent">
+        <h2 class="heading-secondary u-center-text">how it works</h2>
+        <h3 class="heading-tertiary u-center-text">Rent with following 3 working steps</h3>
+
+        <div class="flex u-margin-bottom-big  container">
+            <div class="rent__steps">
+                <div class="rent__img-container">
+                    <img src="images/location.svg" alt="#" class="rent__img">
+                </div>
+                <div class="rent__text-box">
+                    <h4 class="rent__heading">
+                        Choose location
+                    </h4>
+                    <p class="rent__text">Choose your location and find your best car.</p>
+                </div>
+            </div>
+
+            <div class="rent__steps">
+                <div class="rent__img-container important">
+                    <img src="images/date-and-time.svg" alt="#" class="rent__img">
+                </div>
+                <div class="rent__text-box">
+                    <h4 class="rent__heading">
+                        Pick-up date & time
+                    </h4>
+                    <p class="rent__text">Select your pick up date and time to book your car.</p>
+                </div>
+            </div>
+            
+            <div class="rent__steps">
+                <div class="rent__img-container">
+                    <img src="images/car.svg" alt="#" class="rent__img">
+                </div>
+                <div class="rent__text-box">
+                    <h4 class="rent__heading">
+                        Reserve your car
+                    </h4>
+                    <p class="rent__text">Book your car and we will come directly to you.</p>
                 </div>
             </div>
         </div>
-        
-</div>
+        <div class="u-center-text">
+            <a href="#" class="btn btn--round btn--primary">Reserve Now</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="heading-secondary u-center-text">Testimonials</h2>
+        <h3 class="heading-tertiary u-center-text">What people say about us?</h3>
 
+        <div class="flex container testimonials__flex-box">
+            <div class="testimonials__arrow testimonials__arrow--left">
+                <img src="images/left-arrow.svg" alt="left-arrow">
+            </div>
+            <div class="testimonials__img-container">
+                <img src="images/user.jpg" alt="user" class="testimonials__img">
+            </div>
+            <div class="testimonials__text-box">
+                <p class="testimonials__text">
+                    There are many variations of passages a but Nullam vulputate urna, adipiscing vulputate mauris nisl sagittis et. Quisque id semper est nullam enim leo in nec laoreet.
+                </p>
+                <h4 class="testimonials__username">Charlie Johnson</h4>
 
+                <div class="testimonials__rating">
+                    <img src="images/star.svg" alt="star" class="testimonials__star">
+                    <img src="images/star.svg" alt="star" class="testimonials__star">
+                    <img src="images/star.svg" alt="star" class="testimonials__star">
+                    <img src="images/star.svg" alt="star" class="testimonials__star">
+                    <img src="images/star.svg" alt="star" class="testimonials__star">
+                    <span class="testimonials__rating-number">5.0</span>
+                </div>
 
+                <div class="testimonials__active-mark">
+                    <span class="testimonials__rectangle testimonials__rectangle--active">&nbsp;</span>
+                    <span class="testimonials__rectangle">&nbsp;</span>
+                    <span class="testimonials__rectangle">&nbsp;</span>
+                    <span class="testimonials__rectangle">&nbsp;</span>
+                </div>
+            </div>
+            <div class="testimonials__arrow testimonials__arrow--right">
+                <img src="images/right-arrow.svg" alt="right-arrow">
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2 class="heading-secondary u-center-text">what’s new?</h2>
+        <h3 class="heading-tertiary u-center-text">Check out our blog</h3>
+
+        <div class="flex container u-margin-bottom-medium">
+            <div class="blog-card">
+                <div class="blog-card__img-container">
+                    <img src="images/blog-1.jpg" alt="blog image" class="blog-card__img">
+                </div>
+                <h4 class="blog-card__heading u-center-text">Blog Name Lorem Ipsum</h4>
+                <p class="blog-card__text u-center-text">Lorem ipsum</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card__img-container">
+                    <img src="images/blog-1.jpg" alt="blog image" class="blog-card__img">
+                </div>
+                <h4 class="blog-card__heading u-center-text">Blog Name Lorem Ipsum</h4>
+                <p class="blog-card__text u-center-text">Lorem ipsum</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card__img-container">
+                    <img src="images/blog-1.jpg" alt="blog image" class="blog-card__img">
+                </div>
+                <h4 class="blog-card__heading u-center-text">Blog Name Lorem Ipsum</h4>
+                <p class="blog-card__text u-center-text">Lorem ipsum</p>
+            </div>
+        </div>
+
+        <div class="u-center-text">
+            <button class="btn btn-primary btn--round">Read more</button>
+        </div>
+    </section>
+
+    <section class="crew">
+        <h2 class="heading-secondary u-center-text">our crew</h2>
+        <h3 class="heading-tertiary u-center-text">Take a look at our drivers</h3>
+
+        <div class="flex container crew__flex-box">
+            <div class="driver-card">
+                <div class="driver-card__img-container">
+                    <img src="images/driver.jpg" alt="#" class="driver-card__img">
+                </div>
+                <h3 class="driver-card__username">Jamie Vardy</h3>
+            </div>
+            <div class="driver-card">
+                <div class="driver-card__img-container">
+                    <img src="images/driver.jpg" alt="#" class="driver-card__img">
+                </div>
+                <h3 class="driver-card__username">Jamie Vardy</h3>
+            </div>
+            <div class="driver-card">
+                <div class="driver-card__img-container">
+                    <img src="images/driver.jpg" alt="#" class="driver-card__img">
+                </div>
+                <h3 class="driver-card__username">Jamie Vardy</h3>
+            </div>
+            <div class="driver-card">
+                <div class="driver-card__img-container">
+                    <img src="images/driver.jpg" alt="#" class="driver-card__img">
+                </div>
+                <h3 class="driver-card__username">Jamie Vardy</h3>
+            </div>
+        </div>
+    </section>
+    <section class="travel">
+        <img src="images/travel-car.png" alt="travel-car" class="travel__img">
+
+        <div class="travel__text-box container">
+            <h2 class="travel__heading">Your next</br>travel with us?</h2>
+            <p class="travel__text">Quisque id semper est nullam enim leo in nec laoreet.</p>
+            <a href="#" class="btn btn--primary btn--round">Reserve now</a>
+
+            <div class="flex u-margin-top-big">
+                <div class="travel__info-box flex">
+                    <div class="travel__icon-box">
+                        <img src="images/contact.svg" alt="contact icon">
+                    </div>
+                    <div class="travel__info-text-box">
+                        <h4 class="travel__info-title">Contact us at</h4>
+                        <p class="travel__info-text">contact@silimo.co</p>
+                    </div>
+                </div>
+                <div class="travel__info-box flex">
+                    <div class="travel__icon-box">
+                        <img src="images/contact.svg" alt="contact icon">
+                    </div>
+                    <div class="travel__info-text-box">
+                        <h4 class="travel__info-title">Contact us at</h4>
+                        <p class="travel__info-text">contact@silimo.co</p>
+                    </div>
+                </div>
+                <div class="travel__info-box flex">
+                    <div class="travel__icon-box">
+                        <img src="images/contact.svg" alt="contact icon">
+                    </div>
+                    <div class="travel__info-text-box">
+                        <h4 class="travel__info-title">Contact us at</h4>
+                        <p class="travel__info-text">contact@silimo.co</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="flex container">
+            <div class="footer__logo-box">
+                <img src="images/logo-black.svg" alt="logo" class="footer__logo">
+            </div>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-list-item"><a href="#" class="footer__navigation-link">Home</a></li>
+                    <li class="footer__navigation-list-item"><a href="#" class="footer__navigation-link">About us</a></li>
+                    <li class="footer__navigation-list-item"><a href="#" class="footer__navigation-link">Our fleet</a></li>
+                    <li class="footer__navigation-list-item"><a href="#" class="footer__navigation-link">Services</a></li>
+                    <li class="footer__navigation-list-item"><a href="#" class="footer__navigation-link">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social-media">
+                <img src="images/twitter.svg" alt="twitter-logo" class="footer__icon">
+                <img src="images/facebook.svg" alt="facebook-logo" class="footer__icon">
+                <img src="images/instagram.svg" alt="instagram-logo" class="footer__icon">
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="flex container">
+                <p class="footer__copyright-text">© Silimo 2022, All Rights Reserved</p>
+                <div class="footer__copyright-links">
+                    <a href="#" class="footer__copyright-link">Privacy Policy</a>
+                    <a href="#" class="footer__copyright-link">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-</html>
+</html> 
